@@ -7,7 +7,11 @@ while True :
     address = input("Enter location : ")
     if len(address) < 1 : break
 
+<<<<<<< HEAD
     url = 'https://maps.googleapis.com/maps/api/geocode/json?address='+ urllib.parse.urlencode({'address':address}) + '&'
+=======
+    url = 'https://maps.googleapis.com/maps/api/geocode/json?address='+ urllib.parse.urlencode({'address':address}) + ''
+>>>>>>> 4284d1dec72f3351305d0e21580c6e0c1b66f13e
 
     print('Retriving', url)
     uh = urllib.request.urlopen(url)
