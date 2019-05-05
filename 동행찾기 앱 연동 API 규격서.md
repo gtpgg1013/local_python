@@ -1,6 +1,6 @@
 # 동행찾기 앱 연동 API 규격서 v0.01
 
-#### [POST]/user : 유저 회원가입
+### [POST]/user : 유저 회원가입
 
 Parameters
 
@@ -46,7 +46,7 @@ Code 200 : 회원 정상 등록
 
 
 
-#### [GET]/user/DBnum : 유저의 회원가입 내용을 알려준다
+### [GET]/user/DBnum : 유저의 회원가입 내용을 알려준다
 
 Parameters
 
@@ -80,7 +80,7 @@ Responses
 
 
 
-#### [PUT]/user/UserID : 유저의 상세내용을 수정한다 (자신만 수정할 수 있다)
+### [PUT]/user/UserID : 유저의 상세내용을 수정한다 (자신만 수정할 수 있다)
 
 Parameter
 
@@ -122,7 +122,7 @@ Response : 200
 
 
 
-#### [DELETE]/user/UserID : 유저를 삭제한다 (회원 탈퇴 : 자기 자신만 삭제 가능)
+### [DELETE]/user/UserID : 유저를 삭제한다 (회원 탈퇴 : 자기 자신만 삭제 가능)
 
 Parameter
 
@@ -132,7 +132,7 @@ Response : 200 (삭제 성공) / 404 (조건에 맞는 유저 ID가 없음)
 
 
 
-#### [POST]/posting : 게시물 작성
+[POST]/posting : 게시물 작성
 
 Parameters
 
@@ -172,7 +172,7 @@ Code 200 : 글 정상 등록
 
 
 
-#### [GET]/posting/DBnum : 게시물 상세 내용
+### [GET]/posting/DBnum : 게시물 상세 내용
 
 Parameters
 
@@ -202,7 +202,7 @@ Responses
 
 
 
-#### [PUT]/posting/DBnum : 글의 상세내용을 수정한다 (자신만 수정할 수 있다)
+### [PUT]/posting/DBnum : 글의 상세내용을 수정한다 (자신만 수정할 수 있다)
 
 Parameter
 
@@ -234,7 +234,7 @@ Response : 200
 
 
 
-#### [DELETE]/posting/DBnum : 글을 삭제한다 (글쓴이만 삭제 가능)
+### [DELETE]/posting/DBnum : 글을 삭제한다 (글쓴이만 삭제 가능)
 
 Parameter
 
@@ -244,7 +244,7 @@ Response : 200 (삭제 성공) / 404 (조건에 맞는 유저 ID가 없음)
 
 
 
-#### [GET]/posting/search : 글을 검색한다
+### [GET]/posting/search : 글을 검색한다
 
 Parameter
 
@@ -272,7 +272,7 @@ Response : 200
 
 
 
-#### [POST]/posting/DBnum/reply : 댓글 달기
+### [POST]/posting/DBnum/reply : 댓글 달기
 
 Parameter
 
@@ -302,7 +302,7 @@ Response : 200
 
 
 
-#### [GET]/posting/DBnum/reply/replynum : DBnum 번호 글에 달린 reply 가져오기
+### [GET]/posting/DBnum/reply/replynum : DBnum 번호 글에 달린 reply 가져오기
 
 Parameter
 
@@ -324,7 +324,7 @@ Responses : 200
 
 
 
-#### [PUT]/posting/DBnum/reply/replynum : 댓글의 상세내용을 수정한다 (자신만 수정할 수 있다)
+### [PUT]/posting/DBnum/reply/replynum : 댓글의 상세내용을 수정한다 (자신만 수정할 수 있다)
 
 Parameter
 
@@ -352,7 +352,7 @@ Response : 200
 
 
 
-#### [DELETE]/posting/DBnum/reply/replynum : 댓글을 삭제한다 (글쓴이만 삭제 가능)
+### [DELETE]/posting/DBnum/reply/replynum : 댓글을 삭제한다 (글쓴이만 삭제 가능)
 
 Parameter
 
