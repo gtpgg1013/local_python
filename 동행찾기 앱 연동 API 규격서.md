@@ -152,9 +152,9 @@ PostingCreate (body)
 
 "tripDate" : "20190505-20190507",
 
-"destination1" : "태국",
+"destination1" : "1",
 
-"destination2" : "방콕"
+"destination2" : "2"
 
 }
 
@@ -194,9 +194,9 @@ Responses
 
 "tripDate" : "20190505-20190507",
 
-"destination1" : "태국",
+"destination1" : "1",
 
-"destination2" : "방콕"
+"destination2" : "2"
 
 }
 
@@ -216,9 +216,9 @@ UserUpdate : 글 상세내용 수정에 필요한 정보
 
 "tripDate" : "20190505-20190507",
 
-"destination1" : "태국",
+"destination1" : "1",
 
-"destination2" : "방콕"
+"destination2" : "2"
 
 }
 
@@ -361,6 +361,64 @@ dbNum : DB상 저장된 글 번호
 replyNum : 댓글 번호
 
 Response : 200 (삭제 성공) 
+
+
+
+### [GET]/geolist: 지역 조회
+
+Parameter
+
+Response : 200
+
+{
+
+"geoList" : [
+
+​	{
+
+​		"idx" : "0",
+
+​		"geoName" : "아시아"
+
+​	},
+
+​	{
+
+​		"idx" : "1",
+
+​		"geoName" : "오세아니아"
+
+​	},
+
+​	{
+
+​	"idx" : "2",
+
+​	"geoName" : "유럽"
+
+​	},
+
+​	{
+
+​	"idx" : "3",
+
+​	"geoName" : "북미"
+
+​	},
+
+​	{
+
+​	"idx" : "4",
+
+​	"geoName" : "아프리카"
+
+​	}
+
+​		]
+
+"geoDetailList" : {"한국", "일본" : "2" ,"프랑스" : "3","호주" : "4"}
+
+}
 
 
 
