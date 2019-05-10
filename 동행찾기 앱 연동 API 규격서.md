@@ -152,9 +152,9 @@ PostingCreate (body)
 
 "tripDate" : "20190505-20190507",
 
-"destination1" : "1",
+"interestedPlace1" : "1",
 
-"destination2" : "2"
+"interestedPlace2" : "2"
 
 }
 
@@ -164,7 +164,7 @@ Code 200 : 글 정상 등록
 
 {
 
-"createdTime" : "201905052202",
+"deletedTime" : "201905052202",
 
 "status" : "succeed"
 
@@ -378,7 +378,7 @@ Response : 200
 
 ​		"idx" : "0",
 
-​		"geoName" : "아시아"
+​		"geoAreaName" : "동유럽"
 
 ​	},
 
@@ -386,7 +386,91 @@ Response : 200
 
 ​		"idx" : "1",
 
-​		"geoName" : "오세아니아"
+​		"geoAreaName" : "남유럽",
+
+​		"geoDetailList" : [
+
+​			{
+
+​				"idx" : "0",
+
+​				"geoDetailName" : "이탈리아"
+
+​			},
+
+​			{
+
+​				"idx" : "1",
+
+​				"geoDetailName" : "스페인"
+
+​			},
+
+​			{
+
+​				"idx" : "2",
+
+​				"geoDetailName" : "터키"
+
+​			},
+
+​			{
+
+​				"idx" : "3",
+
+​				"geoDetailName" : "그리스"
+
+​			},
+
+​			{
+
+​				"idx" : "0",
+
+​				"geoDetailName" : "포르투갈"
+
+​			},
+
+​			{
+
+​				"idx" : "4",
+
+​				"geoDetailName" : "루마니아"
+
+​			},
+
+​			{
+
+​				"idx" : "5",
+
+​				"geoDetailName" : "크로아티아"
+
+​			},
+
+​			{
+
+​				"idx" : "6",
+
+​				"geoDetailName" : "불가리아"
+
+​			},
+
+​			{
+
+​				"idx" : "7",
+
+​				"geoDetailName" : "슬로베니아"
+
+​			},
+
+​			{
+
+​				"idx" : "8",
+
+​				"geoDetailName" : "세르비아"
+
+​			},
+
+​		]
 
 ​	},
 
@@ -394,7 +478,75 @@ Response : 200
 
 ​	"idx" : "2",
 
-​	"geoName" : "유럽"
+​	"geoAreaName" : "북유럽",
+
+​	"geoDetailList" : [
+
+​			{
+
+​				"idx" : "0",
+
+​				"geoDetailName" : "네덜란드"
+
+​			},
+
+​			{
+
+​				"idx" : "1",
+
+​				"geoDetailName" : "독일"
+
+​			},
+
+​			{
+
+​				"idx" : "2",
+
+​				"geoDetailName" : "노르웨이"
+
+​			},
+
+​			{
+
+​				"idx" : "3",
+
+​				"geoDetailName" : "덴마크"
+
+​			},
+
+​			{
+
+​				"idx" : "4",
+
+​				"geoDetailName" : "스웨덴"
+
+​			},
+
+​			{
+
+​				"idx" : "5",
+
+​				"geoDetailName" : "아이슬란드"
+
+​			},
+
+​			{
+
+​				"idx" : "6",
+
+​				"geoDetailName" : "핀란드"
+
+​			},
+
+​			{
+
+​				"idx" : "7",
+
+​				"geoDetailName" : "발트 3국"
+
+​			}
+
+​		]
 
 ​	},
 
@@ -402,7 +554,43 @@ Response : 200
 
 ​	"idx" : "3",
 
-​	"geoName" : "북미"
+​	"geoAreaName" : "북미",
+
+​	"geoDetailList" : [
+
+​			{
+
+​				"idx" : "0",
+
+​				"geoDetailName" : "미국"
+
+​			},
+
+​			{
+
+​				"idx" : "1",
+
+​				"geoDetailName" : "캐나다"
+
+​			},
+
+​			{
+
+​				"idx" : "2",
+
+​				"geoDetailName" : "멕시코"
+
+​			},
+
+​			{
+
+​				"idx" : "3",
+
+​				"geoDetailName" : "그린란드",
+
+​			}
+
+​		]
 
 ​	},
 
@@ -410,13 +598,381 @@ Response : 200
 
 ​	"idx" : "4",
 
-​	"geoName" : "아프리카"
+​	"geoAreaName" : "남미",
 
-​	}
+​	"geoDetailList" : [
+
+​			{
+
+​				"idx" : "0",
+
+​				"geoDetailName" : "우루과이"
+
+​			},
+
+​			{
+
+​				"idx" : "1",
+
+​				"geoDetailName" : "칠레"
+
+​			},
+
+​			{
+
+​				"idx" : "2",
+
+​				"geoDetailName" : "콜롬비아"
+
+​			},
+
+​			{
+
+​				"idx" : "3",
+
+​				"geoDetailName" : "파라과이"
+
+​			},
+
+​			{
+
+​				"idx" : "4",
+
+​				"geoDetailName" : "페루"
+
+​			},
+
+​			{
+
+​				"idx" : "5",
+
+​				"geoDetailName" : "볼리비아"
+
+​			},
+
+​			{
+
+​				"idx" : "6",
+
+​				"geoDetailName" : "브라질"
+
+​			},
+
+​			{
+
+​				"idx" : "7",
+
+​				"geoDetailName" : "아르헨티나"
+
+​			},
+
+​			{
+
+​				"idx" : "8",
+
+​				"geoDetailName" : "에콰도르"
+
+​			},
+
+​			{
+
+​				"idx" : "9",
+
+​				"geoDetailName" : "그외"
+
+​			}
 
 ​		]
 
-"geoDetailList" : {"한국", "일본" : "2" ,"프랑스" : "3","호주" : "4"}
+​	},
+
+​	{
+
+​		"idx" : "5",
+
+​		"geoAreaName" : "동아시아",
+
+​		"geoDetailList" : [
+
+​			{
+
+​				"idx" : "0",
+
+​				"geoDetailName" : "일본"
+
+​			},
+
+​			{
+
+​				"idx" : "1",
+
+​				"geoDetailName" : "중국"
+
+​			},
+
+​			{
+
+​				"idx" : "2",
+
+​				"geoDetailName" : "홍콩"
+
+​			},
+
+​			{
+
+​				"idx" : "3",
+
+​				"geoDetailName" : "대만"
+
+​			},
+
+​			{
+
+​				"idx" : "4",
+
+​				"geoDetailName" : "몽골"
+
+​			},
+
+​			{
+
+​				"idx" : "5",
+
+​				"geoDetailName" : "그외"
+
+​			}
+
+​		]
+
+​	},
+
+​	{
+
+​		"idx" : "6",
+
+​		"geoAreaName" : "서남아시아",
+
+​		"geoDetailList" : [
+
+​			{
+
+​				"idx" : "0",
+
+​				"geoDetailName" : "말레이시아"
+
+​			},
+
+​			{
+
+​				"idx" : "1",
+
+​				"geoDetailName" : "미얀마"
+
+​			},
+
+​			{
+
+​				"idx" : "2",
+
+​				"geoDetailName" : "베트남"
+
+​			},
+
+​			{
+
+​				"idx" : "3",
+
+​				"geoDetailName" : "싱가포르"
+
+​			},
+
+​			{
+
+​				"idx" : "4",
+
+​				"geoDetailName" : "브루나이"
+
+​			},
+
+​			{
+
+​				"idx" : "5",
+
+​				"geoDetailName" : "인도네시아"
+
+​			},
+
+​			{
+
+​				"idx" : "6",
+
+​				"geoDetailName" : "캄보디아"
+
+​			},
+
+​			{
+
+​				"idx" : "7",
+
+​				"geoDetailName" : "태국"
+
+​			},
+
+​			{
+
+​				"idx" : "8",
+
+​				"geoDetailName" : "필리핀"
+
+​			},
+
+​			{
+
+​				"idx" : "9",
+
+​				"geoDetailName" : "그외"
+
+​			}
+
+​		]
+
+​	},
+
+​	{
+
+​		"idx" : "7",
+
+​		"geoAreaName" : "서남아시아",
+
+​		"geoDetailList" : [
+
+​			{
+
+​				"idx" : "0",
+
+​				"geoDetailName" : "사우디아라비아"
+
+​			},
+
+​			{
+
+​				"idx" : "1",
+
+​				"geoDetailName" : "요르단"
+
+​			},
+
+​			{
+
+​				"idx" : "2",
+
+​				"geoDetailName" : "이라크"
+
+​			},
+
+​			{
+
+​				"idx" : "3",
+
+​				"geoDetailName" : "이란"
+
+​			},
+
+​			{
+
+​				"idx" : "4",
+
+​				"geoDetailName" : "이스라엘"
+
+​			},
+
+​			{
+
+​				"idx" : "5",
+
+​				"geoDetailName" : "쿠웨이트"
+
+​			},
+
+​			{
+
+​				"idx" : "6",
+
+​				"geoDetailName" : "이집트"
+
+​			},
+
+​			{
+
+​				"idx" : "7",
+
+​				"geoDetailName" : "그외"
+
+​			}
+
+​		]
+
+​	},
+
+​	{
+
+​		"idx" : "8",
+
+​		"geoAreaName" : "오세아니아",
+
+​		 "geoDetailList" : [
+
+​			{
+
+​				"idx" : "0",
+
+​				"geoDetailName" : "호주"
+
+​			},
+
+​			{
+
+​				"idx" : "1",
+
+​				"geoDetailName" : "뉴질랜드"
+
+​			},
+
+​			{
+
+​				"idx" : "2",
+
+​				"geoDetailName" : "그외"
+
+​			}
+
+​			]
+
+​	},
+
+​	{
+
+​		"idx" : "9",
+
+​		"geoAreaName" : "그외",
+
+​		 "geoDetailList" : [
+
+​			{
+
+​				"idx" : "0",
+
+​				"geoDetailName" : "그외"
+
+​			}
+
+​			]
+
+​	}
+
+​	]
+
+
 
 }
 
