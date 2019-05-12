@@ -38,3 +38,16 @@
   - BN 하면 higher learning rate 할 수 있다!
 - 3.4
   - BN하면 모델 정규화가능
+- Internal Covariance Shift
+  - Network의 각 층이나 Activation 마다 input의 distribution이 달라지는 현상
+  - [https://shuuki4.wordpress.com/2016/01/13/batch-normalization-%EC%84%A4%EB%AA%85-%EB%B0%8F-%EA%B5%AC%ED%98%84/](https://shuuki4.wordpress.com/2016/01/13/batch-normalization-설명-및-구현/)
+    - 설명 잘 된 페이지
+- back-propagation?
+  - chain rule : 맨 앞단의 레이어가 맨 뒷단의 결과에 얼마나 영향을 미칠까?
+    - 미분계수 / 편미분
+      - 미분계수 값의 의미가 무엇?
+        - 결과값에 끼치는 변화량
+        - 즉, 체인룰에 의해 편미분계수들의 곱이 됨
+      - 그렇다면 왜 gradient vanishing / exploding이 일어날까?
+  - NN이라는 것이 각 레이어 및 노드에서 일을 가장 잘 할수 있는 '미분계수'를 찾는 것
+    - 뒤에서부터 그 계수를 찾아간다 : 백프로파게이션

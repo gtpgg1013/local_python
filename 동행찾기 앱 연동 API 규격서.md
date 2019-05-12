@@ -484,7 +484,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "0",
+​				"idx" : "9",
 
 ​				"geoDetailName" : "네덜란드"
 
@@ -492,7 +492,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "1",
+​				"idx" : "10",
 
 ​				"geoDetailName" : "독일"
 
@@ -500,7 +500,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "2",
+​				"idx" : "11",
 
 ​				"geoDetailName" : "노르웨이"
 
@@ -508,7 +508,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "3",
+​				"idx" : "12",
 
 ​				"geoDetailName" : "덴마크"
 
@@ -516,7 +516,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "4",
+​				"idx" : "13",
 
 ​				"geoDetailName" : "스웨덴"
 
@@ -524,7 +524,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "5",
+​				"idx" : "14",
 
 ​				"geoDetailName" : "아이슬란드"
 
@@ -532,7 +532,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "6",
+​				"idx" : "15",
 
 ​				"geoDetailName" : "핀란드"
 
@@ -540,7 +540,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "7",
+​				"idx" : "16",
 
 ​				"geoDetailName" : "발트 3국"
 
@@ -560,7 +560,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "0",
+​				"idx" : "17",
 
 ​				"geoDetailName" : "미국"
 
@@ -568,7 +568,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "1",
+​				"idx" : "18",
 
 ​				"geoDetailName" : "캐나다"
 
@@ -576,7 +576,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "2",
+​				"idx" : "19",
 
 ​				"geoDetailName" : "멕시코"
 
@@ -584,7 +584,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "3",
+​				"idx" : "20",
 
 ​				"geoDetailName" : "그린란드",
 
@@ -604,7 +604,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "0",
+​				"idx" : "21",
 
 ​				"geoDetailName" : "우루과이"
 
@@ -612,7 +612,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "1",
+​				"idx" : "22",
 
 ​				"geoDetailName" : "칠레"
 
@@ -620,7 +620,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "2",
+​				"idx" : "23",
 
 ​				"geoDetailName" : "콜롬비아"
 
@@ -628,7 +628,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "3",
+​				"idx" : "24",
 
 ​				"geoDetailName" : "파라과이"
 
@@ -636,7 +636,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "4",
+​				"idx" : "25",
 
 ​				"geoDetailName" : "페루"
 
@@ -644,7 +644,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "5",
+​				"idx" : "26",
 
 ​				"geoDetailName" : "볼리비아"
 
@@ -652,7 +652,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "6",
+​				"idx" : "27",
 
 ​				"geoDetailName" : "브라질"
 
@@ -660,7 +660,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "7",
+​				"idx" : "28",
 
 ​				"geoDetailName" : "아르헨티나"
 
@@ -668,7 +668,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "8",
+​				"idx" : "29",
 
 ​				"geoDetailName" : "에콰도르"
 
@@ -676,7 +676,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "9",
+​				"idx" : "30",
 
 ​				"geoDetailName" : "그외"
 
@@ -696,7 +696,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "0",
+​				"idx" : "31",
 
 ​				"geoDetailName" : "일본"
 
@@ -704,7 +704,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "1",
+​				"idx" : "32",
 
 ​				"geoDetailName" : "중국"
 
@@ -712,7 +712,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "2",
+​				"idx" : "33",
 
 ​				"geoDetailName" : "홍콩"
 
@@ -720,7 +720,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "3",
+​				"idx" : "34",
 
 ​				"geoDetailName" : "대만"
 
@@ -728,7 +728,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "4",
+​				"idx" : "35",
 
 ​				"geoDetailName" : "몽골"
 
@@ -736,7 +736,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "5",
+​				"idx" : "36",
 
 ​				"geoDetailName" : "그외"
 
@@ -750,13 +750,13 @@ Response : 200
 
 ​		"idx" : "6",
 
-​		"geoAreaName" : "서남아시아",
+​		"geoAreaName" : "동남아시아",
 
 ​		"geoDetailList" : [
 
 ​			{
 
-​				"idx" : "0",
+​				"idx" : "37",
 
 ​				"geoDetailName" : "말레이시아"
 
@@ -764,7 +764,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "1",
+​				"idx" : "38",
 
 ​				"geoDetailName" : "미얀마"
 
@@ -772,7 +772,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "2",
+​				"idx" : "39",
 
 ​				"geoDetailName" : "베트남"
 
@@ -780,7 +780,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "3",
+​				"idx" : "40",
 
 ​				"geoDetailName" : "싱가포르"
 
@@ -788,7 +788,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "4",
+​				"idx" : "41",
 
 ​				"geoDetailName" : "브루나이"
 
@@ -796,7 +796,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "5",
+​				"idx" : "42",
 
 ​				"geoDetailName" : "인도네시아"
 
@@ -804,7 +804,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "6",
+​				"idx" : "43",
 
 ​				"geoDetailName" : "캄보디아"
 
@@ -812,7 +812,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "7",
+​				"idx" : "44",
 
 ​				"geoDetailName" : "태국"
 
@@ -820,7 +820,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "8",
+​				"idx" : "45",
 
 ​				"geoDetailName" : "필리핀"
 
@@ -828,7 +828,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "9",
+​				"idx" : "46",
 
 ​				"geoDetailName" : "그외"
 
@@ -848,7 +848,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "0",
+​				"idx" : "47",
 
 ​				"geoDetailName" : "사우디아라비아"
 
@@ -856,7 +856,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "1",
+​				"idx" : "48",
 
 ​				"geoDetailName" : "요르단"
 
@@ -864,7 +864,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "2",
+​				"idx" : "49",
 
 ​				"geoDetailName" : "이라크"
 
@@ -872,7 +872,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "3",
+​				"idx" : "50",
 
 ​				"geoDetailName" : "이란"
 
@@ -880,7 +880,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "4",
+​				"idx" : "51",
 
 ​				"geoDetailName" : "이스라엘"
 
@@ -888,7 +888,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "5",
+​				"idx" : "52",
 
 ​				"geoDetailName" : "쿠웨이트"
 
@@ -896,7 +896,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "6",
+​				"idx" : "53",
 
 ​				"geoDetailName" : "이집트"
 
@@ -904,7 +904,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "7",
+​				"idx" : "54",
 
 ​				"geoDetailName" : "그외"
 
@@ -924,7 +924,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "0",
+​				"idx" : "55",
 
 ​				"geoDetailName" : "호주"
 
@@ -932,7 +932,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "1",
+​				"idx" : "56",
 
 ​				"geoDetailName" : "뉴질랜드"
 
@@ -940,7 +940,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "2",
+​				"idx" : "57",
 
 ​				"geoDetailName" : "그외"
 
@@ -960,7 +960,7 @@ Response : 200
 
 ​			{
 
-​				"idx" : "0",
+​				"idx" : "58",
 
 ​				"geoDetailName" : "그외"
 
