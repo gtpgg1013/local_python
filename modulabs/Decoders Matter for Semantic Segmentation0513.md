@@ -28,4 +28,3 @@
 - adaptive-temperature softmax
 - [https://m.blog.naver.com/PostList.nhn?blogId=laonple&categoryNo=49&logCode=0&categoryName=%EC%9B%94%EA%B0%84%20%EC%9E%90%EB%8F%99%EC%9D%B8%EC%8B%9D%20%EC%95%84%EC%B9%B4%ED%85%8C%EB%AF%B8](https://m.blog.naver.com/PostList.nhn?blogId=laonple&categoryNo=49&logCode=0&categoryName=월간 자동인식 아카테미)
 - <https://m.blog.naver.com/PostList.nhn?blogId=laonple&categoryNo=31&listStyle=style1>
-
