@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from __future__ import with_statement
 from sqlite3 import dbapi2 as sqlite3
 from hashlib import md5
@@ -25,11 +26,10 @@ def connect_db():
     return sqlite3.connect(app.config['DATABASE'])
 
 def init_db():
-    # with closing(connect_db()) as db:
-    with app.open_resource('schema.sql', mode='r') as f:
-        connect_db().cursor().executescript(f.read())
-    connect_db().commit()
-    connect_db().close()
+    with closing(connect_db()) as db:
+        with app.open_resource('schema.sql', mode='r') as f:
+            db.cursor().executescript(f.read())
+        db.commit()
 
 def query_db(query, args=(), one=False):
     cur = g.db.execute(query,args)
@@ -78,7 +78,7 @@ def timeline():
             user.user_id = ? or
             user.user_id in (select whom_id from follower
                                 where who_id = ?))
-        order by message.pub_date desc limit?''',
+        order by message.pub_date desc limit ?''',
         [session['user_id'], session['user_id'], PER_PAGE]))
 
 @app.route('/public')
@@ -96,14 +96,14 @@ def user_timeline(username):
         abort(404)
     followed = False
     if g.user:
-        followed = query_db('''select 1 from follwer where
+        followed = query_db('''select 1 from follower where
             follower.who_id = ? and follower.whom_id = ?''',
             [session['user_id'], profile_user['user_id']],
             one=True) is not None
-    return render_template('timeline_html',messages=query_db('''
+    return render_template('timeline.html',messages=query_db('''
             select message.*, user.* from message, user where
             user.user_id = message.author_id and user.user_id = ?
-            order by message.pub_date desc limt ?''',
+            order by message.pub_date desc limit ?''',
             [profile_user['user_id'],PER_PAGE]), followed=followed,
             profile_user=profile_user)
 
@@ -113,6 +113,8 @@ def follow_user(username):
     if not g.user:
         abort(401)
     whom_id = get_user_id(username)
+    if whom_id is None:
+        abort(404)
     g.db.execute('insert into follower (who_id, whom_id) values (?,?)',
                 [session['user_id'], whom_id])
     g.db.commit()
@@ -142,6 +144,9 @@ def add_message():
         g.db.execute('''insert into
             message (author_id, text, pub_date)
             values (?, ?, ?)''', (session['user_id'], request.form['text'], int(time.time())))
+        g.db.commit()
+        flash('Your message was recorded')
+    return redirect(url_for('timeline'))
 
 @app.route('/login', methods=['GET','POST'])
 def login():
@@ -162,7 +167,7 @@ def login():
             flash('You were logged in')
             session['user_id'] = user['user_id']
             return redirect(url_for('timeline'))
-    return render_template('login_html',error=error)
+    return render_template('login.html',error=error)
 
 @app.route('/register',methods=['GET','POST'])
 def register():
@@ -179,7 +184,7 @@ def register():
         elif not request.form['password']:
             error = 'You have to enter a password'
         elif request.form['password'] != request.form['password2']:
-            error = "The two passwords do not match"
+            error = 'The two passwords do not match'
         elif get_user_id(request.form['username']) is not None:
             error = 'The username is already taken'
         else:
@@ -190,7 +195,7 @@ def register():
             g.db.commit()
             flash('You were successfully registered and can login now')
             return redirect(url_for('login'))
-        return render_template('register.html',error=error)
+    return render_template('register.html',error=error)
 
 @app.route('/logout')
 def logout():
@@ -200,8 +205,8 @@ def logout():
     return redirect(url_for('public_timeline'))
 
 #add some filters to jinja
-# app.jinja_env.filters['datetimeformat'] = format_datetime
-# app.jinja_env.filters['gravatar'] = gravatar_url
+app.jinja_env.filters['datetimeformat'] = format_datetime
+app.jinja_env.filters['gravatar'] = gravatar_url
 
 if __name__ == '__main__':
     init_db()

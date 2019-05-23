@@ -7,7 +7,7 @@ create table if not exists user (
 
 create table if not exists follower (
     who_id integer,
-    whom_id integer,
+    whom_id integer
 );
 
 create table if not exists message (

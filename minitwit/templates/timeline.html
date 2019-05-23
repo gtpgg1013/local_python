@@ -13,7 +13,7 @@
     {% if g.user %}
         {% if request.endpoint == 'user_timeline' %}
             <div class=followstatus>
-                {% if g.user.user_id == profile_user.user_id}
+                {% if g.user.user_id == profile_user.user_id %}
                     This is You!
                 {% elif followed %}
                     You are currently following this user.
@@ -36,7 +36,7 @@
     {% endif %}
     <ul class=messages>
         {% for message in messages %}
-            <li><img src="{{ message.email|gravata(size=48) }}"><p>
+            <li><img src="{{ message.email|gravatar(size=48) }}"><p>
                 <strong><a href="{{ url_for('user_timeline', username=message.username) }}">{{ message.username }}</a></strong>
                 {{ message.text }}
                 <small>&mdash; {{ message.pub_date|datetimeformat }}</small>

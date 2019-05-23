@@ -14,3 +14,4 @@ for num in c:
     print(num)
 
 # dict((cur.description[idx][0], value) for idx, value in enumerate(row)) for row in cur.fetchall()
+t = [1,2,3,4,5]
