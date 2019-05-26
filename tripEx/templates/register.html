@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block title %}Sign Up{% endblock %}
+{% block body %}
+    <h2>Sign Up</h2>
+    {% if error %}<div class=error><strong>Error:</strong>{{ error }}</div>{% endif %}
+    <form action="" method=post>
+        <dl>
+            <dt>ID:</dt>
+            <dd><input type=text name=userID size=30 value="{{ request.form.userID }}"></dd>
+            <dt>Password:</dt>
+            <dd><input type=password name=password size=30></dd>
+            <dt>Password <small>(repeat)</small></dt>
+            <dd><input type=password name=password2 size=30></dd>
+            <dt>Name:</dt>
+            <dd><input type=text name=name size=30 value="{{ request.form.name }}"></dd>
+            <dt>Email:</dt>
+            <dd><input type=text name=email size=30 value="{{ request.form.email }}"></dd>
+            <dt>Address:</dt>
+            <dd><input type=text name=address size=30 value="{{ request.form.address }}"></dd>
+            <dt>여행 선호지역 1:</dt>
+            <dd><input type=text name=interestedPlace1 size=30 value="{{ request.form.interestedPlace1 }}"></dd>
+            <dt>여행 선호지역 2:</dt>
+            <dd><input type=text name=interestedPlace2 size=30 value="{{ request.form.interestedPlace2 }}"></dd>
+            <dt>관심사:</dt>
+            <dd><input type=text name=interest size=30 value="{{ request.form.interest }}"></dd>
+            <dt>여행 스타일:</dt>
+            <dd><input type=text name=tripstyle size=30 value="{{ request.form.style }}"></dd>
+        </dl>
+        <div class=actions><input type=submit value="Sign Up"></div>
+    </form>
+{% endblock %}

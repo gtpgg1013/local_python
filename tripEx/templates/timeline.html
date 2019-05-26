@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block title %}
+    {% if request.endpoint == 'public_timeline' %}
+        Public Timeline
+    {% elif request.endpoint == 'user_timeline' %}
+        {{ profile_user.userID }}'s Timeline
+    {% else %}
+        My Timeline
+    {% endif %}
+{% endblock %}
+{% block body %}
+    <h2>{{ self.title() }}</h2>
+    {% if g.user %}
+        {% if request.endpoint == 'user_timeline' %}
+            <div class=followstatus>
+                {% if g.user.userNum == profile_user.userNum %}
+                    This is You!
+                {% elif followed %}
+                    You are currently following this user.
+                    <a class=unfollow href="{{ url_for('unfollow_user', userID=profile_user.userID) }}">Unfollow User</a>.
+                {% else %}
+                    You are not yet following this user.
+                    <a class=follow href="{{ url_for('follow_user', userID=profile_user.userID) }}">Follow User</a>.
+                {% endif %}
+            </div>
+        {% elif request.endpoint == 'timeline' %}
+            <div class=twinbox>
+                <h3>What's on your mind {{ g.user.userID }}?</h3>
+                <form action="{{ url_for('add_posting') }}" method=post>
+                    <p>제목:<input type=text name=title size=60>
+                    <p>내용:<input type=text name=contents size=60>
+                    <input type=submit value="Share"></p>
+                </form>
+            </div>
+        {% endif %}
+    {% endif %}
+    <ul class=messages>
+        <!--밑의 posting.email, ID를 쓸 수 있는 것은 join을 해서 그런것인가?-->
+        {% for posting in postings %}
+            <li><img src="{{ posting.email|gravatar(size=48) }}"><p>
+                <strong><a href="{{ url_for('user_timeline', userID=posting.userID) }}">{{ posting.userID }}</a></strong>
+                <strong>{{ posting.title }}</strong>
+                <br>
+                {{ posting.contents}}
+                <small>&mdash; {{ posting.pubTime|datetimeformat }}</small>
+            </p></li>
+        {% else %}
+            <li><em>There's no message so far.</em></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -68,6 +68,7 @@ def teardown_request(exception):
     if hasattr(g,'db'):
         g.db.close()
 
+#팔로워들만 보이는!
 @app.route('/')
 def timeline():
     if not g.user:
